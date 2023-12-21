@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200;1,800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0 ;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 42.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 9rem 9%;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    border-style: inset;
+    color: black;
+    cursor: pointer;
+    background: yellow;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+.btn:hover{
+    background: black;
+    color:white;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 30px;
+    color: black;
+}
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 0rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(83, 124, 176);
+}
+
+
+header .logo img {
+    margin-right: 2px, auto;
+    font-size: 3.2rem;
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: -98px;
+}
+header .tt{
+    position: relative;
+    left: -322px;
+    margin-right: 2px, auto ;
+    font-size: 3.2rem;
+    color:black;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+i{
+    color:green;
+}
+ 
+header .navbar a{
+    font-size: 55.5;
+    color: black;
+    font-size: 2rem;
+    margin:0 .8rem;
+    
+}
+
+header .navbar a:hover{
+    color: rgb(224, 224, 224);
+}
+header .icons i{
+    font-size: 2.5rem;
+    color: black;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: rgb(193, 197, 193);
+}
+header .search-btn-Container{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 1.5rem 2rem;
+    background:  rgb(224, 224, 224);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 0 0);
+}
+
+header .search-btn-Container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+header .search-btn-Container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: black;
+    font-size: 1.7rem;
+    border-radius: 5rem;
+
+}
+
+header .search-btn-Container label{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+
+header .search-btn-Container label:hover{
+    color: rgb(63, 253, 113);
+}
+
+#menu-bar{
+    color: black;
+    border: 1rem  black;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
